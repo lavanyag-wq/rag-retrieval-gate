@@ -32,14 +32,14 @@ class ChromaIndex:
             )
         self.dim = dim
         try:
-            import chromadb
+            import chromadb  # pragma: no cover (exercised only with the chroma extra)
         except ModuleNotFoundError as exc:
             raise UsageError(
                 "chromadb is not installed; install the 'chroma' extra: "
                 "pip install 'rag-retrieval-gate[chroma]'"
             ) from exc
-        self._client = chromadb.EphemeralClient()
-        self._collection = self._client.create_collection(
+        self._client = chromadb.EphemeralClient()  # pragma: no cover
+        self._collection = self._client.create_collection(  # pragma: no cover
             collection_name, metadata={"hnsw:space": "cosine"}
         )
 
@@ -50,21 +50,23 @@ class ChromaIndex:
             )
         if vectors.ndim != 2 or vectors.shape[1] != self.dim:
             raise UsageError(f"vectors must be (n, {self.dim}), got {tuple(vectors.shape)}")
-        self._collection.add(ids=doc_ids, embeddings=vectors.tolist())
+        self._collection.add(ids=doc_ids, embeddings=vectors.tolist())  # pragma: no cover
 
     def search(self, query_vec: np.ndarray, k: int) -> list[tuple[str, float]]:
         if k < 1:
             raise UsageError(f"k must be >= 1, got {k}")
         if query_vec.shape != (self.dim,):
             raise UsageError(f"query vector must be ({self.dim},), got {tuple(query_vec.shape)}")
-        res = self._collection.query(query_embeddings=[query_vec.tolist()], n_results=k)
-        ids = res["ids"][0]
-        distances = res["distances"][0]
-        scored = [(doc_id, 1.0 - float(dist))
+        res = self._collection.query(  # pragma: no cover
+            query_embeddings=[query_vec.tolist()], n_results=k
+        )
+        ids = res["ids"][0]  # pragma: no cover
+        distances = res["distances"][0]  # pragma: no cover
+        scored = [(doc_id, 1.0 - float(dist))  # pragma: no cover
                   for doc_id, dist in zip(ids, distances, strict=True)]
         # Re-apply this package's total order so store choice cannot change ranking semantics.
-        scored.sort(key=lambda pair: (-pair[1], pair[0]))
-        return scored
+        scored.sort(key=lambda pair: (-pair[1], pair[0]))  # pragma: no cover
+        return scored  # pragma: no cover
 
     def __len__(self) -> int:
-        return self._collection.count()
+        return self._collection.count()  # pragma: no cover

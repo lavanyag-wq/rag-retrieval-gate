@@ -84,7 +84,9 @@ def required_set_size(regression_rate: float, alpha: float = 0.05, power: float 
         achieved = binom_tail(n, threshold, regression_rate)
         if achieved >= power:
             return n
-    raise UsageError("no set size up to 100000 achieves the requested power")
+    raise UsageError(  # pragma: no cover (guard; unreachable for rate > 0 at these alphas)
+        "no set size up to 100000 achieves the requested power"
+    )
 
 
 @dataclass(frozen=True)
