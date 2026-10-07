@@ -1,0 +1,119 @@
+{
+ "anchors": {
+  "coverage_line_pct": [
+   "{}% line coverage",
+   "coverage of {}%"
+  ],
+  "downsize_mean_delta_points": [
+   "dim=64 moved the mean by {} points",
+   "mean delta of {} points"
+  ],
+  "downsize_p_value": [
+   "p = {} on",
+   "{} significance"
+  ],
+  "downsize_worse": [
+   "all {} moved queries",
+   "{} queries strictly worse"
+  ],
+  "first_bad_gate_fp_pct": [
+   "read {}% false positives",
+   "a {}% false positive",
+   "the {}% false positive"
+  ],
+  "floor_share_36_pct": [
+   "{}% of the 36-query set"
+  ],
+  "gate_fp_pct": [
+   "fired {}% of the time",
+   "measured {}%"
+  ],
+  "gate_trials": [
+   "{} sign-flip trials",
+   "over {} trials"
+  ],
+  "min_detectable_worse": [
+   "fewer than {} one-direction flips",
+   "below {} one-direction",
+   "least {} queries must move",
+   "minimum of {} flips"
+  ],
+  "n_documents": [
+   "{} documents"
+  ],
+  "n_queries": [
+   "{}-query",
+   "{} queries",
+   "{} labelled queries"
+  ],
+  "naive_fp_18_pct": [
+   "fires {}% of the time"
+  ],
+  "naive_fp_8_pct": [
+   "fired on {}% of",
+   "{}% of resampled"
+  ],
+  "required_10pct": [
+   "needs {} queries",
+   "takes {} queries",
+   "requires {} queries"
+  ],
+  "required_5pct": [
+   "{} queries to detect",
+   "would take {} queries"
+  ],
+  "tests_total": [
+   "{} tests",
+   "{} property-named tests"
+  ],
+  "upgrade_acronym_worse": [
+   "{} of them acronym-style",
+   "{} acronym queries"
+  ],
+  "upgrade_better": [
+   "{} improved",
+   "{} better"
+  ],
+  "upgrade_mean_delta_points": [
+   "mean recall by {} points",
+   "a {} point mean"
+  ],
+  "upgrade_p_value": [
+   "p = {}",
+   "p-value of {}"
+  ],
+  "upgrade_worse": [
+   "{} queries lost",
+   "{} worse"
+  ]
+ },
+ "checked_documents": [
+  "README.md",
+  "docs/defense-guide.md",
+  "docs/adr/ADR-004-sign-test-null.md"
+ ],
+ "metrics": {
+  "coverage_line_pct": 98,
+  "downsize_mean_delta_points": 6.9,
+  "downsize_p_value": 0.03125,
+  "downsize_worse": 5,
+  "first_bad_gate_fp_pct": 78.5,
+  "floor_share_36_pct": 13.9,
+  "gate_fp_pct": 2.5,
+  "gate_trials": 2000,
+  "min_detectable_worse": 5,
+  "n_documents": 58,
+  "n_queries": 36,
+  "naive_fp_18_pct": 100.0,
+  "naive_fp_8_pct": 84.5,
+  "required_10pct": 66,
+  "required_5pct": 134,
+  "tests_total": 136,
+  "upgrade_acronym_worse": 4,
+  "upgrade_better": 1,
+  "upgrade_mean_delta_points": 4.2,
+  "upgrade_p_value": 0.1875,
+  "upgrade_worse": 4
+ },
+ "note": "every value except first_bad_gate_fp_pct is produced by running the suite and the experiments; first_bad_gate_fp_pct is the recorded output of the pre-fix experiment, see ADR-004"
+}
