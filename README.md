@@ -119,6 +119,16 @@ broken reading is pinned in the receipts so the story cannot drift. The full
 writeup is [ADR-004](docs/adr/ADR-004-sign-test-null.md), and the fix is its
 own commit in the history.
 
+## Measured, drawn
+
+Rendered by `tools/render_charts.py` straight from the experiment JSON; CI
+regenerates both charts and fails on any drift, the same contract the prose
+lives under.
+
+<img src="docs/chart-false-alarms.svg" width="820" alt="bars of false alarm rate on identical systems: the naive one-point mean rule at 84.5, 86.8 and 100 percent by resample size, the paired sign-test gate at 2.5 percent, the declared alpha dashed at 5 percent">
+
+<img src="docs/chart-resolution.svg" width="820" alt="bars of queries required before the gate can call a regression: 12, 26, 66 and 134 for regression rates of 50, 25, 10 and 5 percent, with this repository's own 36-query set dashed and the bars exceeding it drawn red">
+
 ## Architecture
 
 <img src="docs/diagram.svg" width="920" alt="corpus feeds two runs; the gate compares them per query and exits 0, 1 or 2">

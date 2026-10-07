@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="330" viewBox="0 0 820 330">
+<rect width="820" height="330" fill="#fcfdfe"/>
+<text x="410.0" y="26" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" fill="#1d2733">Queries a golden set needs before the gate can call a regression</text>
+<line x1="80" y1="266.0" x2="780" y2="266.0" stroke="#dde5ec"/>
+<text x="72" y="270.0" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="end" font-weight="normal" fill="#1d2733">0</text>
+<line x1="80" y1="232.79736908676955" x2="780" y2="232.79736908676955" stroke="#dde5ec"/>
+<text x="72" y="236.79736908676955" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="end" font-weight="normal" fill="#1d2733">25</text>
+<line x1="80" y1="199.5947381735391" x2="780" y2="199.5947381735391" stroke="#dde5ec"/>
+<text x="72" y="203.5947381735391" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="end" font-weight="normal" fill="#1d2733">50</text>
+<line x1="80" y1="166.39210726030862" x2="780" y2="166.39210726030862" stroke="#dde5ec"/>
+<text x="72" y="170.39210726030862" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="end" font-weight="normal" fill="#1d2733">75</text>
+<line x1="80" y1="133.1894763470782" x2="780" y2="133.1894763470782" stroke="#dde5ec"/>
+<text x="72" y="137.1894763470782" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="end" font-weight="normal" fill="#1d2733">100</text>
+<line x1="80" y1="99.9868454338477" x2="780" y2="99.9868454338477" stroke="#dde5ec"/>
+<text x="72" y="103.9868454338477" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="end" font-weight="normal" fill="#1d2733">125</text>
+<line x1="80" y1="66.78421452061725" x2="780" y2="66.78421452061725" stroke="#dde5ec"/>
+<text x="72" y="70.78421452061725" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="end" font-weight="normal" fill="#1d2733">150</text>
+<rect x="127.25" y="250.06273716164938" width="80.5" height="15.93726283835062" fill="#2b6777"/>
+<text x="167.5" y="242.06273716164938" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d2733">12</text>
+<text x="167.5" y="282" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1d2733">50% of queries</text>
+<text x="167.5" y="298" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1d2733">regress</text>
+<rect x="302.25" y="231.46926385024034" width="80.5" height="34.53073614975966" fill="#2b6777"/>
+<text x="342.5" y="223.46926385024034" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d2733">26</text>
+<text x="342.5" y="282" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1d2733">25% of queries</text>
+<text x="342.5" y="298" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1d2733">regress</text>
+<rect x="477.25" y="178.3450543890716" width="80.5" height="87.6549456109284" fill="#9a3b3b"/>
+<text x="517.5" y="170.3450543890716" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d2733">66</text>
+<text x="517.5" y="282" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1d2733">10% of queries</text>
+<text x="517.5" y="298" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1d2733">regress</text>
+<rect x="652.25" y="88.03389830508476" width="80.5" height="177.96610169491524" fill="#9a3b3b"/>
+<text x="692.5" y="80.03389830508476" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d2733">134</text>
+<text x="692.5" y="282" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1d2733">5% of queries</text>
+<text x="692.5" y="298" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1d2733">regress</text>
+<line x1="80" y1="218.18821148494814" x2="780" y2="218.18821148494814" stroke="#b8860b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="776" y="211.18821148494814" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" fill="#b8860b">this repo's own set: 36 queries</text>
+<text x="430.0" y="322" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1d2733">exact sign-test power at 80%, alpha 0.05; red bars exceed the set this repository itself ships</text>
+</svg>

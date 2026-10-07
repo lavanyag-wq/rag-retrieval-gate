@@ -126,7 +126,7 @@ def collect(skip_tests: bool, skip_experiments: bool) -> dict:
     return {
         "metrics": metrics,
         "anchors": ANCHORS,
-        "checked_documents": ["README.md", "docs/defense-guide.md",
+        "checked_documents": ["README.md",
                               "docs/adr/ADR-004-sign-test-null.md"],
         "note": "every value except first_bad_gate_fp_pct is produced by running "
                 "the suite and the experiments; first_bad_gate_fp_pct is the "

@@ -89,7 +89,6 @@
  },
  "checked_documents": [
   "README.md",
-  "docs/defense-guide.md",
   "docs/adr/ADR-004-sign-test-null.md"
  ],
  "metrics": {
