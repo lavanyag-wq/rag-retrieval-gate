@@ -1,0 +1,35 @@
+{
+ "alpha": 0.05,
+ "naive_threshold_points": 1.0,
+ "note": "identical system on both sides; every fire is a false positive",
+ "population_queries": 36,
+ "rows": [
+  {
+   "gate_fires": 19,
+   "gate_fp_rate_pct": 4.8,
+   "min_detectable_worse": 5,
+   "naive_fires": 328,
+   "naive_fp_rate_pct": 82.0,
+   "subset_size": 8,
+   "trials": 400
+  },
+  {
+   "gate_fires": 110,
+   "gate_fp_rate_pct": 27.5,
+   "min_detectable_worse": 5,
+   "naive_fires": 352,
+   "naive_fp_rate_pct": 88.0,
+   "subset_size": 12,
+   "trials": 400
+  },
+  {
+   "gate_fires": 314,
+   "gate_fp_rate_pct": 78.5,
+   "min_detectable_worse": 5,
+   "naive_fires": 400,
+   "naive_fp_rate_pct": 100.0,
+   "subset_size": 18,
+   "trials": 400
+  }
+ ]
+}

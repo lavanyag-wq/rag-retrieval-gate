@@ -1,0 +1,101 @@
+{
+ "alpha": 0.05,
+ "baseline": "v1/dim=256",
+ "k": 5,
+ "metric": "recall",
+ "n_queries": 36,
+ "rows": [
+  {
+   "better": 1,
+   "by_style": {
+    "acronym": {
+     "better": 1,
+     "worse": 4
+    }
+   },
+   "candidate": "upgrade",
+   "embedder": "v2/dim=256",
+   "mean_delta_points": -4.2,
+   "mean_recall_baseline": 0.8194,
+   "mean_recall_candidate": 0.7778,
+   "p_value": 0.1875,
+   "ties": 31,
+   "verdict": "PASS",
+   "worse": 4,
+   "worse_query_ids": [
+    "q000a",
+    "q001a",
+    "q002a",
+    "q008a"
+   ]
+  },
+  {
+   "better": 0,
+   "by_style": {
+    "acronym": {
+     "better": 0,
+     "worse": 5
+    }
+   },
+   "candidate": "downsize",
+   "embedder": "v1/dim=64",
+   "mean_delta_points": -6.9,
+   "mean_recall_baseline": 0.8194,
+   "mean_recall_candidate": 0.75,
+   "p_value": 0.03125,
+   "ties": 31,
+   "verdict": "REGRESSION",
+   "worse": 5,
+   "worse_query_ids": [
+    "q002a",
+    "q006a",
+    "q007a",
+    "q008a",
+    "q011a"
+   ]
+  },
+  {
+   "better": 1,
+   "by_style": {
+    "acronym": {
+     "better": 1,
+     "worse": 9
+    },
+    "direct": {
+     "better": 0,
+     "worse": 1
+    },
+    "paraphrase": {
+     "better": 0,
+     "worse": 5
+    }
+   },
+   "candidate": "collapse",
+   "embedder": "v1/dim=32",
+   "mean_delta_points": -20.8,
+   "mean_recall_baseline": 0.8194,
+   "mean_recall_candidate": 0.6111,
+   "p_value": 0.00026,
+   "ties": 20,
+   "verdict": "REGRESSION",
+   "worse": 15,
+   "worse_query_ids": [
+    "q000a",
+    "q001a",
+    "q001p",
+    "q002a",
+    "q003p",
+    "q004a",
+    "q006a",
+    "q007a",
+    "q008a",
+    "q008p",
+    "q009a",
+    "q009d",
+    "q009p",
+    "q011a",
+    "q011p"
+   ]
+  }
+ ]
+}
